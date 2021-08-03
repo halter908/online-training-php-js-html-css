@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function pyr(num)
+            {
+              for(var i=0;i<num;i++)
+              {
+                for(var k=num;k>i;k--)
+                {
+                  document.write("&nbsp;");
+                }
+                for(var j=0;j<=i;j++)
+                {
+                  document.write("*");
+                }
+                document.write("<br>");
+              }
+            }
+            var num1=prompt("Enter The Number Of rows");
+            pyr(num1);
+        </script>
+    </head>
+</html>

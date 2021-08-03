@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clock()
+        {
+            var date=new Date();
+            var hrs=date.getHours();
+            var mins=date.getMinutes();
+            var secs=date.getSeconds();
+            var time=hrs+":"+mins+":"+secs;
+            setInterval(clock,1000);
+
+            document.getElementById("d1").innerHTML=time;
+        }
+        clock();
+    </script>
+</head>
+<body>
+    <div id="d1"></div>
+    
+</body>
+</html>
