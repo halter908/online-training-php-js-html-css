@@ -1,17 +1,18 @@
 <html>
     <head>
         <script>
-            function pow(a, b){
-                let result - 1;
-                for(let i=1; i <=b; i++){
-                    result *=a;
-
-                }
-                return result;
-            }
-            var x=prompt("Enter the number");
-            var y=prompt("Enter the power value")
-            alert(pow(x, y) );
+            function pow(x, n) {
+  if (n == 1) {
+    return x;
+  } else {
+    return x * pow(x, n - 1);
+  }
+}
+var a=prompt("enter no");
+var b=prompt("enter power");
+//2 3  8  2 1 2  31 3 4 1 4   no 2  power 3  2 * pow(2,3-1) pow(2,2) 2*pow(2,2)   2*2(pow 2,1)  2*2*2(pow 2,0) 8 
+// recursion
+alert( pow(a, b) );
         </script>
     </head>
 </html>
