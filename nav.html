@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <style>
+            ul{
+                list-style-type:circle;
+                background-color: blueviolet;
+                 overflow: hidden;  
+            }
+           li{
+                float: left;
+            }
+            
+            li a{
+                display: inline-block;
+                color: brown;
+                text-align: center;
+                padding: 14px 14px;
+                text-decoration:underline;
+                text-decoration-color: chartreuse;
+                text-decoration-style:wavy
+            }
+            
+           /* li a:hover, .dropdown:hover{
+                background-color: cornflowerblue;
+            }*/
+            li.dropdown{
+                display: inline-block;
+            } 
+           
+           .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: darkgoldenrod;
+                width:90px;
+            }  
+            
+             .dropdown-content a{
+                color: darksalmon;
+                display: block;
+                text-decoration:none;
+                text-align: left;
+            } 
+            
+              .dropdown-content a:hover{
+                background-color: deeppink;
+                
+            } 
+            
+            /* .dropdownbtn{
+                background-color: dimgray;
+                color:black;
+            } */
+            
+             .dropdown:hover .dropdown-content{
+                display: block;
+            }   
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li class="dropdown">
+                <a href="" class="dropdownbtn">dropdown</a>
+                <div class="dropdown-content">
+                    <a href="#">link1</a>
+                    <a href="#">link2</a>
+                    <a href="#">link3</a>
+                </div>
+
+            </li>
+        </ul>
+    </body>
+</html>
